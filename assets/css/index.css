@@ -4,8 +4,33 @@ body {
   font-family: "Poppins";
   font-size: 22px;
   margin: auto;
-  background-color: rgb(255, 255, 255)26);
 }
+
+#header {
+  background-image: url("../img/bgf.png");
+  width: 100%;
+  display: table;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#about {
+  background-image: url("../img/about.png");
+  width: 100%;
+  display: table;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-content {
+  padding-left: 32%;
+  padding-right: 32%;
+}
+
+.header-ill {
+  width: 30%;
+}
+
 .logo {
   width: 400px;
 }
@@ -75,11 +100,6 @@ p {
 }
 /* -------- End Typography -------------*/
 
-#about {
-  padding-left: 32%;
-  padding-right: 32%;
-}
-
 .join-button {
   width: 18%;
   background: linear-gradient(to right, #c62c76, #d348ea);
@@ -120,7 +140,11 @@ textarea {
   background-color: #ffffff;
   border-radius: 20px;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
+  background-image: url("../img/card.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card:hover {
@@ -165,10 +189,10 @@ textarea {
   display: table;
   clear: both;
 }
-.column-position-right{
+.column-position-right {
   text-align: right;
 }
-.column-position-left{
+.column-position-left {
   text-align: left;
 }
 @media (max-width: 900px) {
@@ -177,10 +201,10 @@ textarea {
     display: block;
     margin-bottom: 20px;
   }
-  .column-position-right{
+  .column-position-right {
     text-align: center;
   }
-  .column-position-left{
+  .column-position-left {
     text-align: center;
   }
 }
@@ -195,9 +219,13 @@ textarea {
     width: 300px;
   }
 
-  #about {
+  .about-content {
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .header-ill {
+    width: 290px;
   }
 
   .join-button {
