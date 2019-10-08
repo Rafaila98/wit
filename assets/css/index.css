@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   font-size: 1.2rem;
@@ -22,6 +26,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#join-comm {
+  background-image: url("../img/join.png");
+  width: 100%;
+  display: table;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+#footer {
+  background-color: #525252;
+  color: white;
+  padding-top: 20px;
+}
 .about-content {
   padding-left: 32%;
   padding-right: 32%;
@@ -34,6 +53,10 @@ body {
 .logo {
   width: 400px;
 }
+.illustration-contact {
+  width: 400px;
+}
+
 /* -------- Navbar -------------*/
 
 .navbar {
@@ -53,9 +76,6 @@ li a {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-}
-#join {
-  color: red;
 }
 
 a:hover {
@@ -111,6 +131,7 @@ p {
   cursor: pointer;
   text-align: center;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .join-button:hover {
@@ -139,8 +160,7 @@ textarea {
   margin: auto;
   background-color: #ffffff;
   border-radius: 20px;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 50px;
   background-image: url("../img/card.png");
   background-position: center;
   background-repeat: no-repeat;
