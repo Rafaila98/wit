@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/img/app3.png");
+  font-family: "Poppins";
+  margin: auto;
+  text-align: center;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* FORM STYLES */
+
+.contact form label {
+  display: block;
+}
+
+.card {
+  background-image: url("../assets/img/app1x.png");
+  font-family: "ComicSansMS", cursive, sans-serif;
+  width: 40%;
+}
+
+.date {
+  width: 25%;
+}
+label {
+  color: #777777;
+  font-size: 15px;
+}
+input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+}
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+/* LARGE SCREENS */
+@media (max-width: 1025px) {
+  .card {
+    width: 95% !important;
+  }
+  .date {
+    width: 60%;
+  }
+}
