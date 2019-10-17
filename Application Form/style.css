@@ -22,7 +22,7 @@ body {
 }
 
 .card {
-  background-image: url("../assets/img/app1x.png");
+  background-colour:#777777;
   font-family: "ComicSansMS", cursive, sans-serif;
   width: 40%;
 }
@@ -30,6 +30,16 @@ body {
 .date {
   width: 25%;
 }
+
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
 label {
   color: #777777;
   font-size: 15px;
