@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Women in Tech</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <a href="http://www.womenintech.gr/"><img src="../assets/img/logo.png"  style="width: 250px;" /></a>
+    
+    <div class="card">
+    <div class="contact">
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Όνοματεπώνυμο</label>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Name is required"
+            >
+              <input class="name" id="name" type="text" name="name" required/>
+              <label class="label-input100" for="name">
+                <span class="lnr lnr-user"></span>
+              </label>
+            </div>
+            </p>
+            <p>
+            <label>Πανεπιστήμιο / Τμήμα</label>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Name is required"
+            >
+              <input class="name" id="university" type="text" name="university" required/>
+            </div>
+          </p>
+          <p>
+              <label>Έτος φοίτησης</label>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Name is required"
+            >
+              <input class="name" id="uni_year" type="text" name="uni_year" required/>
+            </div>
+              <label class="label-input100" for="name">
+                <span class="lnr lnr-user"></span>
+              </label>
+            </div>
+            <p>
+            <label> LinkedIn Profile URL</label>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Name is required"
+            >
+              <input class="name" id="linkedin" type="text" name="LinkedIn" />
+              
+              <label class="label-input100" for="name">
+                <span class="lnr lnr-user"></span>
+              </label>
+            </div>
+          </p>
+          <p>
+            <label>Email</label>
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Valid email is required: example@abc.xyz"
+            >
+              <input class="email" id="email" type="email" name="email" required/>
+              <label class="label-input100" for="email">
+                <span class="lnr lnr-envelope"></span>
+              </label>
+            </div>
+          </p>
+          <p>
+            <label>Για ποιο λόγο θες να μπεις στο community;</label>
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Message is required"
+            >
+              <textarea class="message" name="message1" id="message1" min=20 required></textarea>
+            </div>
+            </p>
+            <p>
+            <label
+              >Ποιά ειναι μια τεχνολογική εφεύρεση που σε έχει εντυπωσιάσει και
+              γιατί;</label
+            >
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Message is required"
+            >
+              <textarea class="message" name="message2" id="message2"></textarea>
+            </div>
+          </p>
+          <p>
+            <label
+              >Τι πιστεύεις ότι πρέπει να γίνει για να ενισχυθεί η συμμετοχή των
+              γυναικών στο κλάδο της τεχνολογίας;</label
+            >
+
+            <div
+              class="wrap-input100 validate-input"
+              data-validate="Message is required"
+            >
+              <textarea class="message" name="message3" id="message3"></textarea>
+            </div>
+          </p>
+            <div class="container-contact100-form-btn">
+              <div class="wrap-contact100-form-btn">
+                <div class="contact100-form-bgbtn"></div>
+                <button type="submit" class="submit-button">
+                  Send
+                </button>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

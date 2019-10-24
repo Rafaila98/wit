@@ -1,0 +1,80 @@
+@import compass @function multiple-box-shadow ($n) $value:
+    "#{random(2000)}px #{random(2000)}px #FFF"@for$ifrom2through$n$value:"#{$value} , #{random(2000)}px #{random(2000)}px #FFF"@return
+    unquote($value) $shadows-small: multiple-box-shadow(700) $shadows-medium: multiple-box-shadow(
+      200
+    ) $shadows-big: multiple-box-shadow(100) html height: 100% background: radial-gradient(
+      ellipse at bottom,
+      #1b2735 0%,
+      #090a0f 100%
+    ) overflow: hidden #stars width: 1px height: 1px background: transparent box-shadow:
+    $shadows-small animation: animStar 50s linear infinite &: after content: " "
+    position: absolute top: 2000px width: 1px height: 1px background: transparent
+    box-shadow: $shadows-small #stars2 width: 2px height: 2px background: transparent
+    box-shadow: $shadows-medium animation: animStar 100s linear infinite &: after
+    content: " " position: absolute top: 2000px width: 2px height: 2px background:
+    transparent box-shadow: $shadows-medium #stars3 width: 3px height: 3px background:
+    transparent box-shadow: $shadows-big animation: animStar 150s linear infinite
+    &: after content: " " position: absolute top: 2000px width: 3px height: 3px background:
+    transparent box-shadow: $shadows-big #title position: absolute top: 50% left:
+    0 right: 0 color: #fff text-align: center font-family: "lato",
+  sans-serif font-weight: 300 font-size: 50px letter-spacing: 10px margin-top: -60px
+    padding-left: 10px span background: -webkit-linear-gradient(white, #38495a) -webkit-background-clip:
+    text -webkit-text-fill-color: transparent @keyframes animStar from transform:
+    translateY(0px) to transform: translateY(-2000px);
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  animation: rotator 1.4s linear infinite;
+}
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+@keyframes colors {
+  0% {
+    stroke: #c2277c;
+  }
+  25% {
+    stroke: #ee4db0;
+  }
+  50% {
+    stroke: #d15699;
+  }
+  75% {
+    stroke: #f37aa8;
+  }
+  100% {
+    stroke: #da91c4;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
